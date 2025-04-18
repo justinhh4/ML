@@ -1,0 +1,35 @@
+CREATE a 4 string double int bool a b c d
+DELETE FROM a WHERE a = bad
+PRINT FROM a 4 a b d c WHERE c > -1
+GENERATE FOR a bst INDEX on a
+GENERATE FOR a hash INDEX on a
+INSERT INTO a 6 ROWS
+abg 12.5 5 true 
+dac 10.9 10 false
+asdf 10.9 3 true
+bad 2.5 10 true
+dac 3.155 10 true
+asa 3.1 -10 false
+GENERATE FOR a hash INDEX on a
+INSERT INTO a 6 ROWS
+dac 12.4 -10 false 
+abc 40.1 -10 true
+bad 12.4 3 false
+ejf 3.5 -3 true
+asd 3.3 -1 false
+djf 1.0 -10 true
+PRINT FROM a 3 b a d ALL 
+PRINT FROM a 3 b a c WHERE a = bad 
+PRINT FROM a 3 b a c WHERE a = dac
+PRINT FROM a 4 b a c d WHERE a = b 
+PRINT FROM a 3 a b c WHERE b < 3.4
+GENERATE FOR a hash INDEX on c
+DELETE FROM a WHERE b > 12.4
+PRINT FROM a 4 a b d c WHERE c > -1
+DELETE FROM a WHERE a = bad
+PRINT FROM a 4 a b d c WHERE c > -1
+PRINT FROM a 4 a b d c WHERE c < 10
+PRINT FROM a 4 a b d c WHERE c = -10
+PRINT FROM a 4 a b d c WHERE c = 10
+PRINT FROM a 4 a b c d ALL 
+QUIT

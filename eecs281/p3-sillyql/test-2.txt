@@ -1,0 +1,27 @@
+CREATE a 4 string double int bool a b c d
+INSERT INTO a 5 ROWS
+abg 12.5 5 true 
+dac 10.9 4 false
+asdf 10.9 3 true
+bad 2.5 10 true
+dac 3.155 10 true
+GENERATE FOR a bst INDEX on a
+INSERT INTO a 6 ROWS
+dac 12.4 3 false 
+abc 40.1 -10 true
+bad 12.4 3 false
+ejf 3.5 -3 true
+asd 3.3 -1 false
+djf 1.0 -10 true
+PRINT FROM a 4 b c a d WHERE c > -1
+PRINT FROM a 4 b c a d WHERE c < 10
+PRINT FROM a 4 a c b d WHERE c = 3
+PRINT FROM a 4 b c a d WHERE a < d
+PRINT FROM a 4 b c a d WHERE a > ad
+PRINT FROM a 4 b c a d WHERE a = abc
+PRINT FROM a 4 b c a d WHERE b < 12.4
+PRINT FROM a 4 b c a d WHERE b > 1.4
+PRINT FROM a 4 b c a d WHERE b = 40.1
+PRINT FROM a 4 b c a d WHERE d < true
+PRINT FROM a 4 b c a d WHERE d > false
+QUIT

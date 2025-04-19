@@ -44,6 +44,7 @@
 
 // This is a type synonym.
 using cost = long long;
+//using namespace std; 
 
 // How much you pay for a discounted (25% off) meal.
 cost discounted(cost full_price) {
@@ -56,7 +57,20 @@ cost best_price(const std::vector<cost>& prices) {
     // TODO: put your code here
     // NOTE: if you use a bottom-up approach, initialize your table with
     // std::numeric_limits<cost>::max()/4 ... you MUST divide by 4!
+    std::vector<std::vector<cost>> table(prices.size(), std::vector<cost>(6, std::numeric_limits<cost>::max()/4));
+    
+    for (size_t i = 0; i < 5; i++){
+        table.back()[i] = discounted(prices.back()); 
+    }
+    table.back()[5] = 0; 
 
+    for (size_t i = prices.size()-2; i != SIZE_MAX; i--){
+        for (size_t j = 0; j < 5; j++){
+            table[i][j] = std::min(prices[i] + table[i+1][j+1], discounted(prices[i]) + table[i+1][j]); 
+        }
+        table[i][5] = std::min(table[i+1][0], discounted(prices[i]) + table[i+1][5]);
+    }
+    return table[0][0];
 
     /* NOTE: This return value will give you additional tips on the AG.
        It will cost you a submit, but if you are stuck, feel free to use it.

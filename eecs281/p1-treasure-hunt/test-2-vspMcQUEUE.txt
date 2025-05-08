@@ -1,7 +1,0 @@
-# test 2
-# small 
-M
-3
-$ # o
-# o o
-o o @

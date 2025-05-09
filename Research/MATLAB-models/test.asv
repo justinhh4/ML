@@ -1,0 +1,3 @@
+load MLpractice.mat; 
+lin_mdl = fitlm(T, binarray);
+svm_mdl1 = fitrsvm(T, b)

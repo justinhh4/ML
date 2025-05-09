@@ -1,0 +1,22 @@
+DEFEAT IN ROUND 8! c ate your brains!
+Zombies still active: 4
+First zombies killed:
+b 1
+a 2
+Last zombies killed:
+a 2
+b 1
+Most active zombies:
+c 6
+a 4
+d 4
+e 4
+f 4
+b 2
+Least active zombies:
+b 2
+a 4
+d 4
+e 4
+f 4
+c 6

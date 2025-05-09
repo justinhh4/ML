@@ -1,0 +1,19 @@
+CREATE a 4 string double int bool a b c d
+CREATE b 4 string double int bool a b c d
+PRINT FROM a 3 b c d WHERE a = bad
+PRINT FROM a 2 d a ALL
+PRINT FROM b 2 a d WHERE b < 0
+#stuff
+REMOVE a
+DELETE FROM a WHERE c < 1
+DELETE FROM a WHERE c = 2
+GENERATE FOR a hash on c 
+PRINT FROM a a ALL
+PRINT FROM a 3 a b d WHERE d > true
+DELETE FROM a WHERE c > 2
+DELETE FROM a WHERE c = 2
+PRINT FROM a 4 a c d b WHERE c > 2
+GENERATE FOR a bst ON d
+JOIN a AND a WHERE a = a AND PRINT 4 a 1 c 2 d 1 b 1
+JOIN a AND b WHERE c = c AND PRINT 4 a 1 b 1 c 1 d 1
+QUIT

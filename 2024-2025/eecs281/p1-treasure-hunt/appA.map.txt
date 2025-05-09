@@ -1,0 +1,12 @@
+# justin edited
+# Appendix A Map: 8x8 with 4 islands
+M
+8
+...o$oo.
+o..oooo.
+...ooo..
+........
+....oo..
+....o...
+...oo...
+..o...@.
